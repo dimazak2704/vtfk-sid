@@ -89,3 +89,7 @@ docker exec "$CONTAINER" bash -c '
 echo
 echo "HTTP check:"
 curl -I http://localhost:8080/
+
+echo
+echo "==> Starting mission containers..."
+bash "$(dirname "${BASH_SOURCE[0]}")/mission.sh"
